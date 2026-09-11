@@ -6,13 +6,34 @@ public class AutoCarrera {
     private int combustible;
     private int integridadNeumaticos;
 
-
-
     public AutoCarrera(String modelo){
         this.modelo = modelo;
         this.combustible = 100;
         this.integridadNeumaticos = 100;
     }
+    // ===Getters (Para que el Launcher y el PitStop puedan leer el estado)===
+    public int getCombustible(){
+        return this.combustible;
+    }
+    public int getIntegridadNeumaticos(){
+        return this.integridadNeumaticos;
+    }
+    public String getModelo(){
+        return this.modelo;
+    }
+    //=============================================================================
+
+    //======Setters (Para que el PitStop pueda recargar el auto sin romper el encapsulamiento)=====
+    public void setCombustible(int newcombustible) {
+        this.combustible = newcombustible;
+    }
+
+    public void setIntegridadNeumaticos(int newintegridadNeumaticos) {
+        this.integridadNeumaticos = newintegridadNeumaticos;
+    }
+   //====================================================================================
+
+
 
     public void darVuelta(){
         System.out.println("Ejecutando Vuelta... ");
