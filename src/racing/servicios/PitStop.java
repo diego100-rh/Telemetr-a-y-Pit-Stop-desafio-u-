@@ -2,7 +2,7 @@ package racing.servicios;
 
 import racing.entidades.AutoCarrera;
 
-public class PipStop {
+public class PitStop {
     public void asistir (AutoCarrera auto){
         System.out.println("\n==== [PIT STOP] =====");
         System.out.println("Vehiculo de modelo" +auto.getModelo()+ "recibido revisando... ");
@@ -16,7 +16,5 @@ public class PipStop {
         System.out.println("================================================\n");
 
     }
-
-
 
 }
